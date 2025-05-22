@@ -1,0 +1,10 @@
+var user1;
+user1 = { name: "Tasmi", id: 1234454 };
+console.log(user1);
+var user2;
+user2 = { userName: 'tasmina', userId: 3233424 };
+console.log(user2);
+var users;
+users = [];
+users.push(user1, user2);
+console.log(users);
