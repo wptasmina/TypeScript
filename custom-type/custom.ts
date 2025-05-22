@@ -1,15 +1,27 @@
-let user1: object
 
-user1 = {name: "Tasmi", id: 1234454}
+type User = { name: string; id: number}
+
+let user1:  User
+user1 = {name: 'tasmi', id: 234343}
 
 console.log(user1);
 
-let user2: {userName: string; userId: number}
-user2 = {userName: 'tasmina', userId: 3233424}
+let user2: User
+user2 = {name: 'tasmina', id: 111234343}
+
 console.log(user2);
 
-let users: object[]
+let users: User[]
 users = []
 users.push(user1, user2)
-
 console.log(users);
+
+
+type RequstType = "Get" | "Post"
+let getRequst: RequstType
+getRequst = "Post"
+
+function hendleder(requstType: RequstType){
+    console.log(requstType);
+}
+hendleder("Get")
