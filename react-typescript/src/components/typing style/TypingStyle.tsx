@@ -1,8 +1,19 @@
-import React from 'react'
+//Style Props
+import ButtonStyle from './ButtonStyle'
+
+const btn ={
+    color: "white", 
+    background: "purple", 
+    fontSize: "20px", 
+    padding: "20px"
+}
 
 function TypingStyle() {
   return (
-    <div>TypingStyle</div>
+    <div>
+        <h3>Style Props</h3>
+        <ButtonStyle btnStyle={btn} />
+    </div>
   )
 }
 
