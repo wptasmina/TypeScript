@@ -7,6 +7,8 @@ import ObjectArray from './components/ObjetArray/ObjectArray';
 import Union from './components/Union-Type/Union';
 import Button from './components/Children-type/Button';
 import TypingStyle from './components/typing style/TypingStyle';
+import UseStates from './components/Children-type/UseStates';
+import EventType from './components/Children-type/EventType';
 
 
 // object Type
@@ -62,6 +64,8 @@ function App() {
         <Button>click me</Button>
 
         <TypingStyle/>
+        <UseStates />
+        <EventType />
         
     </div>
   );
