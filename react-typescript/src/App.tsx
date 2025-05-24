@@ -3,26 +3,59 @@ import './App.css';
 import User from './components/User/User';
 import ArrayUser from './components/ArrayOfUser/ArrayUser';
 import ObjectType from './components/objectType/ObjectType';
+import ObjectArray from './components/ObjetArray/ObjectArray';
+import Union from './components/Union-Type/Union';
 
 
 // object Type
 const user1 = {
-  name: 'Tasmina',
-  age: 25,
-  isRegister: false,
-  leng: [" Bangle, English, Frinch"]
+  name: ["Tasmina akter, Sifat, Rayhen"],
+  email: "tasmina@gmail.com",
+  id: 21113435,
+  age: 29,
+  isRegister: true,
+  leng: [" Bangle, English, Fance"]
 }
+const user2 = {
+  name: ["Sumiya akter, Sar"],
+  email: "sumiya@gmail.com",
+  id: 21113435,
+  age: 32,
+  isRegister: true,
+  leng: ["English, Fance"]
+}
+
+//object of Array
+ const data = [
+  {
+  id: 1,
+  title: "Web Developer",
+  country: "Bangladesh",
+  text: true
+ },
+ {
+  id: 2,
+  title:" Full Stack Developer",
+  country: "Bangladesh",
+  text: false
+ }
+]
 
 
 function App() {
   return (
     <div className="App">
       <p>
-          Edit Typescripet.
-        </p>
+        Edit Typescripet.
+      </p>
         <User name="Tasmina akter" email="tasmina@gmail.com" id={23435} isRegister={true}/>
         <ArrayUser leng={[" Bangle, English"]} name="Tasmina akter" id={123439} isRegister={false}/>
-        <ObjectType user={user1} />
+        <ObjectType user={user1}/>
+        <ObjectType user={user2}/>
+        
+        <ObjectArray users={data} />
+
+        <Union status="success"/>
     </div>
   );
 }
