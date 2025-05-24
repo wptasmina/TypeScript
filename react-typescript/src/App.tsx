@@ -9,6 +9,7 @@ import Button from './components/Children-type/Button';
 import TypingStyle from './components/typing style/TypingStyle';
 import UseStates from './components/Children-type/UseStates';
 import EventType from './components/Children-type/EventType';
+import NewUser from './components/NewUser/NewUser';
 
 
 // object Type
@@ -66,6 +67,7 @@ function App() {
         <TypingStyle/>
         <UseStates />
         <EventType />
+        <NewUser />
         
     </div>
   );
