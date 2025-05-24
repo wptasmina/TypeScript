@@ -1,10 +1,19 @@
 // Union-Type 
 
+type DataUnion = {
+    status: "loding" | "waiting" | "success";
+}
 
+const Union =({status}: DataUnion)=> {
 
-const Union =({status}: {status: string})=> {
+    if(status ==="loding"){
+        return <h2>data loading .....</h2>
+    }else if (status=== "waiting"){
+        return <h1>Data not found</h1>
+    }
+    
   return (
-    <div>Union</div>
+    <div>data success full</div>
   )
 }
 

@@ -5,6 +5,7 @@ import ArrayUser from './components/ArrayOfUser/ArrayUser';
 import ObjectType from './components/objectType/ObjectType';
 import ObjectArray from './components/ObjetArray/ObjectArray';
 import Union from './components/Union-Type/Union';
+import Button from './components/Children-type/Button';
 
 
 // object Type
@@ -55,7 +56,10 @@ function App() {
         
         <ObjectArray users={data} />
 
-        <Union status="success"/>
+        <Union status="waiting"/>
+
+        <Button>click me</Button>
+        
     </div>
   );
 }
